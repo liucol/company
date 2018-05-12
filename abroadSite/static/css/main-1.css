@@ -45,7 +45,7 @@
 .conter .index_over a{ width:159px; height:200px; margin:0 20px;  background:none; }
 .conter .index_over .a_on{ background:none;}
 .conter .index_over a img{ width:159px; height:159px;  filter:alpha(opacity=40); -moz-opacity:0.4; opacity:0.4;border-radius: 5px;}
-.conter .index_over a span{ height:41px; line-height:41px; display:block; color:#676768;}
+.conter .index_over a span{ height:41px; line-height:41px; display:block; font-size:11px;color:#676768;}
 .conter .index_over .a_on img{ filter:alpha(opacity=100); -moz-opacity:1; opacity:1;}
 .conter .index_over .a_on span{ color:#fff;}
 
