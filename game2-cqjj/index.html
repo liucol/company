@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="frontend" content="Robin">
+    <title>苍穹剑诀</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" >
+    <script type="text/javascript" src="static/js/adaptive.js" ></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 640;
+        window['adaptive'].baseFont = 18;
+        window['adaptive'].maxWidth = 640;
+        window['adaptive'].scaleType = 2;
+        window['adaptive'].init();
+    </script>
+</head>
+<body>
+	<div class="wrapper">
+        <!--领取礼包&下载游戏-->
+        <header> 
+            <a href="index.htm"  class="logo"></a>
+            <div class="ginfo">
+                <h2>苍穹剑诀<i>手游</i></h2>
+                <p>2017正版修仙手游</p>
+            </div>
+            <div class="btns">
+                <a href="javascript:if(confirm(''))window.location='http://m.9377.cn/game_card.php'"  class="b1">领取礼包</a>
+                <a href="javascript:;" onclick="open_all()" class="b2 down_url">立即下载</a>
+            </div>
+        </header>
+		<div class="wrap">
+            <a href="javascript:;" onclick="open_all()" class="down_btn down_url">免费下载</a>
+			<div class="info-opens"><i></i><div class="__data__" data_id="__data__[14057]" page="article" postfix="category_12029" style="display: none; "><div></div><span>最新开服信息</span></div>3区127服 1月22日9:00震撼开启</div>
+            <!--轮播 目前写死成一张图片-->
+            <div class="slidebox" id="slidebox">
+                <div class="__data__" data_id="__data__[12902]" page="article" postfix="category_12029" style="display: none; "><div></div><span>首页幻灯</span></div>
+                <div class="bd">
+                    <ul>
+                        <li><a href="#"><img src="static/img/939cbab2fae49de8.jpg"/></a></li><!--http://m.9377.cn/game_card.php?card_type=848-->
+                    </ul>
+                </div>
+                <div class="hd"><ul></ul></div>
+            </div>
+            <!--新闻-->
+            <div class="newsbox">
+				<h3>新闻中心<p>news center</p></h3>
+                <div class="news-con">
+                    <ul class="news-c">
+                        <div class="__data__" data_id="__data__[12884]" page="article" postfix="category_12029" style="display: none; "><div></div><span>公告</span></div>
+                        <li><i></i><a href="news.html" >【合服】《苍穹剑诀》3月22日合服公告</a><span>03/21</span></li>
+                        <li><i></i><a href="news.html" >【开服】9377苍穹剑诀3月20日3区156服</a><span>03/19</span></li>
+                        <li><i></i><a href="news.html" >【开服】9377苍穹剑诀3月17日3区155服</a><span>03/16</span></li>
+                        <li><i></i><a href="news.html" >【更新】9377《苍穹剑诀》3月15日更新公告</a><span>03/15</span></li>
+                        <li><i></i><a href="news.html" >【更新】9377《苍穹剑诀》3月15日7:00-9:00</a><span>03/14</span></li>
+                        <li><i></i><a href="news.html" >【开服】9377苍穹剑诀3月14日3区154服</a><span>03/13</span></li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+        <section class="u-kefu">
+            <a href="javascript:if(confirm(''))window.location='http://www15.53kf.com/webCompany.php?arg=10117158&style=1'"  class="item"><i class="i1"></i>在线客服</a>
+            <a href="tel:02037039849" class="item"><i class="i2"></i>客服电话</a>
+            <a href="javascript:if(confirm(''))window.location='http://m.9377.cn/kefu/'"  class="item"><i class="i3"></i>自助服务</a>
+            <a href="javascript:if(confirm(''))window.location='http://wvw.9377.cn/kefu_center.php?ac=pay&mobile=1'"  class="item"><i class="i4"></i>游戏充值</a>
+            <a href="javascript:if(confirm(''))window.location='http://wvw.9377.cn/'"  class="item"><i class="i5"></i>手游平台</a>
+        </section>
+        <section class="qr_code"></section>
+        <footer>
+            <a href="#" class="back_top totop"></a>
+            <p>广州创思信息技术游戏公司版权所有</p>
+            <p>纠纷处理方式：联系客服或依《<a href="javascript:if('')window.location='https://www.9377.cn/yhxy.html'"  target="_blank">用户协议</a>》约定方式处理</p>
+        </footer>
+        <script type="text/javascript">
+        var url = '';
+        var pack = '';
+        var game = 'cqjj2az';
+        var referer = 'ptyd';
+        var ios_zb_link_url = 'https://itunes.apple.com/cn/app/id1249609452?mt=8';
+        var ios_yy_link_url = '';
+        var android_link_url = 'https://dl.9377.cn/zqsj/zq_9377_sig_zqsj_gw.apk';
+
+        function open_all(tg){
+            if(navigator.userAgent.indexOf("MicroMessenger") > -1){
+                // 微信无法下载，弹出提示窗口
+                if ($("#omg-fixwx").length) {
+                    $("#omg-fixwx").show();
+                }else{
+                    var fixwx_html = '<style>.omg-fixwx { width: 100%; height: 100%; overflow: hidden; position: fixed; top: 0px; left: 0px; z-index: 101; background: rgba(0,0,0,0.9) url(http://statics.9377s.com/images/wap/fixwx.png?201706291515) center bottom no-repeat; background-size:contain;}</style>';
+                        fixwx_html += '<i class="omg-fixwx" id="omg-fixwx"></i>';
+                        fixwx_html += '<script>$("#omg-fixwx").click(function(){$("#omg-fixwx").hide(); })<\/script>';
+                    $('body').append(fixwx_html);
+                }
+            }else{
+                if((navigator.userAgent.indexOf("iPad") > -1 ||
+                        navigator.userAgent.indexOf("iPhone") > -1 ||
+                        navigator.userAgent.indexOf("iPod") > -1
+                    )){
+                    open_url_ios_all(tg);
+                }else{
+                    open_url_android(tg);
+                }
+            }
+        }
+
+        function open_url_ios_zb(){
+            url = ios_zb_link_url;
+
+            if(url){
+                var win = window.open(url);
+                if(win == null){
+                    location.href=url;
+                    return false;
+                }
+            }else{
+                alert('敬请期待');
+                return false;
+            }
+        }
+        function open_url_ios_yy(tg){
+            url = ios_yy_link_url;
+            if(tg == 1){//推广
+                url = "http://xiazai.9377.com/20140508/"+referer+".ipa";
+            }
+            if((url.indexOf("ipa") > -1) && (navigator.userAgent.indexOf("iPad") > -1 ||
+                    navigator.userAgent.indexOf("iPhone") > -1  ||
+                    navigator.userAgent.indexOf("iPod") > -1
+                )){//构造下载地址
+                location.href="https://cqjj.9377.cn/m/itms-services://?action=download-manifest&url=https://s.9377.com/api/plist-"+game+"-"+url+"-"+referer+"-"+pack;
+                return false;
+            }
+            open_url(url);
+        }
+        function open_url_android(tg){
+            url = android_link_url;
+            if(tg == 1){//推广
+                url = "http://xiazai.9377.com/20140508/"+referer+".apk";
+            }
+
+            open_url(url);
+        }
+
+        function open_url_ios_all(tg){
+            if(ios_zb_link_url){
+                var win = window.open(ios_zb_link_url);
+                if(win == null){
+                    location.href=ios_zb_link_url;
+                }
+                return false;
+            }
+            open_url_ios_yy(tg);
+        }
+        function open_url(url){
+            if(url){
+                url="https://wvw.9377.cn/downloads.php?game="+game+"&item=mini&lm="+referer+"&uid=&url="+url;
+                try{
+                    // 执行SDK提供的接口
+                    window.DownloadGame.getGameUrl(url);
+                }catch(e){
+                    console.log(e);
+                    var win = window.open(url);
+                    if(win == null){
+                        location.href=url;
+                    }
+                    return false;
+                }
+            }else{
+                alert('敬请期待');
+                return false;
+            }
+        }
+
+        </script>
+	</div>
+    <script type="text/javascript" src="static/js/common/jquery-3.2.0.min.js" ></script>
+	<script type="text/javascript" src="static/js/common/zepto.min.js" ></script>
+    <script type="text/javascript" src="static/js/common/TouchSlide.1.1.js" ></script>
+    <script type="text/javascript">
+        /*轮播动效*/
+        /*if($('#slidebox .bd li').length){
+            TouchSlide({slideCell:"#slidebox", mainCell:".bd ul", effect:"leftLoop",autoPlay:true});
+        }*/
+        // TAB切换
+        $(".news-tab li").bind('touchstart mousedown',function() {
+            var index = $(this).index();
+            $('.news-con .news-c').eq(index).show().siblings().hide();
+            $(this).addClass('active').siblings().removeClass('active');
+            return false;
+        });
+		$(".news-tab li").eq(0).addClass('active');
+		$(".news-con .news-c").eq(0).show();
+    </script>
+</body>
+</html>
