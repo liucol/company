@@ -203,7 +203,7 @@
 
 /*游戏*/
 .inner_games{ background:url("../img/image/banner/cn.jpg")/*tpa=http://www.lilithgames.com/cn/images/ad_games_inner.jpg*/ no-repeat center; height:433px;}
-.games_box{ width:810px;  border:1px solid #dbdbdb; padding:14px 15px; margin:40px auto 60px auto; overflow:auto; zoom:1;}
+.games_box{ width:780px;  border:1px solid #dbdbdb; padding:14px 15px; margin:40px auto 60px auto; overflow:auto; zoom:1;}
 .games_box .games_a_box{ margin:5px; float:left; width:380px; height:400px; position:relative; cursor:pointer; overflow:hidden}
 .games_box .games_a_box_pic_1{ background:url("../img/image/san/games_img.jpg") no-repeat;}
 .games_box .games_a_box_pic_2{ background:url("../img/image/fenyun/games_img.jpg") no-repeat;}

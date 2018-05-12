@@ -84,7 +84,7 @@
 .pop_nav_ul li span em{font-size:14px; display:block; line-height:18px; margin-top:5px;}
 
 .conter_word{ background:#f6f6f6;}
-.conter_word_warp{ width:752px; margin:0 auto; padding-top:24px; overflow:auto; zoom:1; padding-bottom:85px;}
+.conter_word_warp{ width:792px; margin:0 auto; padding-top:24px; overflow:auto; zoom:1; padding-bottom:85px;}
 .conter_word_warp .conter_word_list{ float:left; display:inline;}
 .conter_word_warp .conter_word_list strong{ display:block; color:#010101; border-bottom:1px solid #c5c5c5; height:52px; line-height:52px; font-size:16px; margin-bottom:19px;}
 .conter_word_warp .conter_word_list a{ line-height:34px; color:#333333; display:block; font-size:14px;}
@@ -92,7 +92,7 @@
 .conter_word_warp .conter_word_list a::after{ content:"";display:block;clear: both; }
 .conter_word_warp .conter_word_list a span{ float:right; color:#999; font-size:12px;}
 .conter_word_warp .conter_word_list a p {width: 270px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;float: left}
-.conter_word_warp .list_1{ width:200px;}
+.conter_word_warp .list_1{ width:240px;}
 .conter_word_warp .list_2{ width:374px; margin-left:70px;}
 .conter_word_warp .list_3{ width:202px; margin-left:75px;}
 .conter_word_warp .list_4{ width:200px; margin-left:75px;}
@@ -200,7 +200,7 @@
 
 /*游戏*/
 .inner_games{ background:url("../img/image/banner/en.jpg") no-repeat center; height:433px;}
-.games_box{ width:810px;  border:1px solid #dbdbdb; padding:14px 15px; margin:40px auto 60px auto; overflow:auto; zoom:1;}
+.games_box{ width:780px;  border:1px solid #dbdbdb; padding:14px 15px; margin:40px auto 60px auto; overflow:auto; zoom:1;}
 .games_box .games_a_box{ margin:5px; float:left; width:380px; height:400px; position:relative; cursor:pointer; overflow:hidden}
 .games_box .games_a_box_pic_1{ background:url("../img/image/san/games_img.jpg") no-repeat;}
 .games_box .games_a_box_pic_2{ background:url("../img/image/fenyun/games_img.jpg") no-repeat;}
