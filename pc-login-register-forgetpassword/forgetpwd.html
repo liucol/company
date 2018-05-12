@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8"UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>找回密码</title>
+    <link rel="stylesheet" href="static/css/mlyx.css" >
+    <link rel="stylesheet" href="static/css/signup.css" >
+    <script src="static/js/vue.min.js" ></script>
+    <script src="static/js/common.js" ></script>
+    <script src="static/js/register.js" ></script>
+</head>
+<body style="">
+<div id="vue-box" class="g-wrap cf">
+    <div class="g-header">
+        <div class="head-container"><a class="brand fl" href="index.html" >
+            <img style="height: 48px;" src="static/img/chuxin_logo.png" ></a>
+            <h1 class="title fl">修改密码</h1>
+            <div class="header-login fr">已有帐号
+                <a class="btn-login" href="login.html" >
+                    <span class="btn-icon"><i class="icon icon-user"></i></span>登录</a>
+            </div>
+        </div>
+    </div>
+    <div class="signup-wrap">
+        <div class="container">
+            <div class="headline">
+                <div class="head-title"><i class="icon icon-identity-card"></i>修改密码</div>
+            </div>
+            <div class="signup-box">
+                <div class="head_tab head-tab">
+                    <ul class="cf">
+                        <li class="cp" data-target=".signup-phone">&nbsp;</li>
+                        <li class="active cp" data-target=".signup-account">修改密码</li>
+                        <li class="cp" data-target=".signup-email">&nbsp;</li>
+                    </ul>
+                </div>
+                <form v-if="!success" class="signup_phone_form signup-form signup-phone">
+                    <div class = "input-box">
+                        <label class="lbl">用户名</label>
+                        <input
+                                v-model="msg.username"
+                                class="input password"
+                                type="text"
+                                tabindex="1"
+                                placeholder="用户名由4-10位数字、字母组成">
+                        <div class="input-chk">
+                            <span v-if="validator(msg.username,'username')" class="muted">用户名由4-10位数字、字母组成</span>
+                            <span v-else style="color: red" class="muted">用户名由4-10位数字、字母组成</span>
+                        </div>
+                    </div>
+
+                    <div class="input-box uname-box">
+                        <label class="lbl">邮箱号</label>
+                        <input
+                                v-model="msg.email"
+                                class="input uname"
+                                type="text"
+                                tabindex="5"
+                                placeholder="请输入邮箱号">
+                        <div class="input-chk">
+                            <span v-if="validator(msg.email,'email')" class="muted">请输入邮箱号</span>
+                            <span v-else style="color:red;" class="muted">请输入邮箱号</span>
+                        </div>
+                    </div>
+
+                    <div class="error-msgwrap">
+                        <span class="error-msg" v-model="msg.errormsg"></span>
+                    </div>
+                    <div class="input-box input-chk">
+                        <button @click="login()" class="btn btn-signup-phone btn-primary" type="button">提交
+                        </button>
+                    </div>
+                </form>
+                <div v-else class="registered-box">
+                    <div class="registered-title">
+                        <i class="icon icon-sucessce"></i>请注意查收邮件
+                    </div>
+                    <div class="registered-level">
+                        <!--当前帐号安全等级：-->
+                        <!--<i class="icon icon-star-full ml-icon"></i>-->
+                        <!--<i class="icon icon-star-full"></i>-->
+                        <!--<i class="icon icon-star"></i><i class="icon icon-star"></i>-->
+                        <!--<i class="icon icon-star mr-icon"></i>低-->
+                    </div>
+                    <a class="btn btn-ucenter" href="index.htm" >前往个人中心</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="g-footer cf">
+    <div class="container"><a class="f-logo fl" href="index.html"  target="_blank">
+		<img src="static/img/chuxin_logo.png" ></a>
+        <div class="copyright fl">
+            <p>Copyright  2013 - 2019 成都初心互动科技有限公司. All Rights Reserved</p>
+            <p class="icp nbm">
+                <a href="static/img/chuxin_logo.png" target="_blank">icp: 川B2-20170306</a>&nbsp;&nbsp;
+                <a href="javascript:window.location='http://www.miitbeian.gov.cn/'"  target="_blank">文网文:川网文(2017)5974-241号</a>&nbsp;&nbsp;
+                <a href="index.htm"  target="_blank">川网文[2016]6088-1458</a>
+            </p>
+        </div>
+    </div>
+</footer>
+<script>
+    var vue = new Vue({
+        el: '#vue-box',
+        data: {
+            msg: {
+                username: '',
+                email: '',
+                errormsg: ''
+            },
+            resflag:{
+                usernameflag: '',
+                emailflag: ''
+            },
+            success:false
+        },
+        methods: {
+            validator: function (val, name) {
+                var flag = '';
+                switch (name) {
+                    case 'username':
+                        flag = /^[\da-zA-Z]{4,10}$/.test(val);
+                        this.resflag.usernameflag = flag;
+                        break;
+                    case 'email':
+                        flag = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/.test(val);
+                        this.resflag.emailflag = flag;
+                        break;
+                }
+                /*!flag && (this.msg[name] = '');*/
+                return flag;
+            },
+            login: function () {
+              var msg = this.msg;
+
+              var resflag = this.resflag,
+                  usernameflag = resflag.usernameflag,
+                  emailflag = resflag.emailflag;
+
+                if(usernameflag && emailflag) {
+                    common.ajax('post',common.ip + '/login/forgetpwd.php',msg,function (data) {
+                        var data = JSON.parse(data);
+                        if(data.code == 0){
+                            vue.success = 1;
+                        } else if(data.code == 3){
+                            msg.errormsg = ' 帐号不正确';
+                        } else if(data.code == 4){
+                            alert(' 邮箱地址不正确');
+                            msg.errormsg = ' 邮箱地址不正确';
+                        } else {
+                            msg.errormsg = ' 找回密码失败，请稍候再试！';
+                        }
+                    })
+                }
+            },
+        },
+    });
+
+</script>
+</body>
+</html>

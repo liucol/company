@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8"UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>帐号注册</title>
+    <link rel="stylesheet" href="static/css/mlyx.css" >
+    <link rel="stylesheet" href="static/css/signup.css" >
+    <script src="static/js/vue.min.js" ></script>
+    <script src="static/js/common.js" ></script>
+</head>
+<body style="">
+<div id="vue-box" class="g-wrap cf">
+    <div class="g-header">
+        <div class="head-container"><a class="brand fl" href="index.html" ><img style="height: 48px;"  src="static/img/chuxin_logo.png" ></a>
+            <h1 class="title fl">注册帐号</h1>
+            <div class="header-login fr">已有帐号
+                <a class="btn-login" href="login.html" ><span class="btn-icon"><i class="icon icon-user"></i></span>登录</a>
+            </div>
+        </div>
+    </div>
+    <div class="signup-wrap">
+        <div class="container">
+            <div class="headline">
+                <div class="head-title"><i class="icon icon-identity-card"></i>注册帐号</div>
+            </div>
+            <div class="signup-box">
+                <div class="head_tab head-tab">
+                    <ul class="cf">
+                        <li class="cp" data-target=".signup-phone">&nbsp;</li>
+                        <li class="active cp" data-target=".signup-account">帐号注册</li>
+                        <li class="cp" data-target=".signup-email">&nbsp;</li>
+                    </ul>
+                </div>
+                <!--<form v-if="!success" class="signup_phone_form signup-form signup-phone">
+                    <div class = "input-box">
+                        <label class="lbl">用户名</label>
+                        <input
+                                v-model="msg.username"
+                                class="input password"
+                                type="text"
+                                tabindex="1"
+                                placeholder="用户名由4-10位数字、字母组成">
+                        <div class="input-chk">
+                            <span v-if="validator(msg.username,'username')" class="muted">用户名由4-10位数字、字母组成</span>
+                            <span v-else style="color: red" class="muted">用户名由4-10位数字、字母组成</span>
+                        </div>
+                    </div>
+                    <div class="input-box password-box">
+                        <label class="lbl">密码</label>
+                        <input
+                                v-model="msg.pass"
+                                class="input password"
+                                type="password"
+                                tabindex="2"
+                                placeholder="密码由6~16位字符组成">
+                        <div class="input-chk">
+                            <span v-if="validator(msg.pass,'pass')" class="muted">密码由6~16位字符组成，建议至少使用两种字符组合</span>
+                            <span v-else style="color:red" class="muted">密码由6~16位字符组成，建议至少使用两种字符组合</span>
+                        </div>
+                    </div>
+                    <div class="input-box confirm-password-box">
+                        <label class="lbl">确认密码</label>
+                        <input
+                                v-model="msg.pass2"
+                                class="input confirm-password"
+                                type="password"
+                                tabindex="3"
+                                placeholder="再次确认密码">
+                        <div class="input-chk">
+                            <span v-if="validator(msg.pass2,'pass2')" class="muted">请两次输入的密码保持一致</span>
+                            <span v-else style="color: red" class="muted">请两次输入的密码保持一致</span>
+                        </div>
+                    </div>
+                    <div class="input-box phone-box">
+                        <label class="lbl">手机号</label>
+                        <input
+                                v-model="msg.phonenumber"
+                                class="input phone"
+                                type="text"
+                                tabindex="4"
+                                placeholder="请输入手机号">
+                        <i class="icon icon-success" title="该手机号可以使用" style="display: none;"></i>
+                        <i class="icon icon-error" title="该手机号已被注册" style="display: none;"></i>
+                        <div class="input-chk">
+                            <span v-if="validator(msg.phonenumber,'phonenumber')" class="muted">请输入正确的手机号</span>
+                            <span v-else style="color: red" class="muted">请输入正确的手机号</span>
+                        </div>
+                    </div>
+
+                    <div class="input-box uname-box">
+                        <label class="lbl">邮箱号</label>
+                        <input
+                                v-model="msg.email"
+                                class="input uname"
+                                type="text"
+                                tabindex="5"
+                                placeholder="请输入邮箱号">
+                        <div class="input-chk">
+                            <span v-if="validator(msg.email,'email')" class="muted">请输入邮箱号</span>
+                            <span v-else style="color:red;" class="muted">请输入邮箱号</span>
+                        </div>
+                    </div>
+
+                    <div class="input-box input-chk">
+                        <button @click="login()" class="btn btn-signup-phone btn-primary" type="button">提交注册</button>
+                    </div>
+                    <div class="input-box input-chk input-tips">
+                        <div class="error-msg"></div>             &lt;!&ndash;:checked="msg.agree"&ndash;&gt;
+                        <input class="chk chk-agree" type="checkbox" v-model="msg.agree">我已阅读并同意
+                        <a href="agreement.html"  target="_blank">《用户注册服务协议》</a>
+                        <span class="agree-service">请同意《用户注册服务协议》</span>
+                    </div>
+                </form>-->
+                <!--<div  class="registered-box">
+                    <div class="registered-title">
+                        <i class="icon icon-sucessce"></i>恭喜您，注册成功！
+                    </div>
+                    <div class="registered-level">
+                        &lt;!&ndash;当前帐号安全等级：&ndash;&gt;
+                        &lt;!&ndash;<i class="icon icon-star-full ml-icon"></i>&ndash;&gt;
+                        &lt;!&ndash;<i class="icon icon-star-full"></i>&ndash;&gt;
+                        &lt;!&ndash;<i class="icon icon-star"></i><i class="icon icon-star"></i>&ndash;&gt;
+                        &lt;!&ndash;<i class="icon icon-star mr-icon"></i>低&ndash;&gt;
+                    </div>
+                    <a class="btn btn-ucenter" href="index.htm" >前往个人中心</a>
+                </div>-->
+                <div class="prompt-message"><p><i class="iconfont">&#xe61e;</i>您已经注册过了啦</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="g-footer cf">
+    <div class="container"><a class="f-logo fl" href="index.html"  target="_blank">
+		<img src="static/img/chuxin_logo.png" ></a>
+        <div class="copyright fl">
+            <p>Copyright  2013 - 2019 成都初心互动科技有限公司. All Rights Reserved</p>
+            <p class="icp nbm">
+                <a href="images/moling_logo.png" target="_blank">icp: 川B2-20170306</a>&nbsp;&nbsp;
+                <a href="javascript:if(confirm('http://www.miitbeian.gov.cn/ '))window.location='http://www.miitbeian.gov.cn/'"  target="_blank">文网文:川网文(2017)5974-241号</a>&nbsp;&nbsp;
+                <a href="index.htm"  target="_blank">川网文[2016]6088-1458</a>
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="static/js/jquery-3.2.0.min.js"></script>
+<script src="static/js/register.js" ></script>
+</body>
+</html>

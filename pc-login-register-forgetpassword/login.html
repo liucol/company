@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8"UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="static/css/mlyx.css">
+    <link rel="stylesheet" href="static/css/signin.css">
+    <script src="static/js/vue.min.js"></script>
+    <script src="static/js/common.js"></script>
+</head>
+<body style="">
+<nav class="g-navbar" id="g_navbar">
+    <div class="container"><a class="brand" href="index.html">
+        <img style="height: 48px;" src="static/img/chuxin_logo.png"></a>
+        <ul class="nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="index.htm">个人中心</a></li>
+            <li><a href="index.htm">充值中心</a></li>
+            <li><a href="index.htm">礼包中心</a></li>
+        </ul>
+        <div class="user-box">
+            <div class="unlogin" style="display: none;"><a class="g-signin" href="javascript:;"><i
+                    class="gicon gicon-user-circle"></i>登录</a><a class="g-signup" href="javascript:;"><i
+                    class="gicon gicon-edit-circle"></i>注册</a></div>
+            <div class="logined" style=""><a class="g-username toe" href="index.htm">@起阳</a><a
+                    class="g-logout" href="javascript:;">[退出]</a><a class="g-message gicon gicon-envelope-circle"
+                                                                    href="index.htm"><span></span></a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div id="vue-box" class="signin-wrapper">
+    <div class="container pr">
+        <div class="signin-box pa">
+            <div class="signin-form" id="signin_form">
+                <div class="input-box">
+                    <input class="input account" v-model="msg.username" type="text" name="account" placeholder="帐号">
+                    <div class="input-addon tac">
+                        <div class="gicon gicon-user"></div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input class="input password" v-model="msg.pass" type="password" name="password" placeholder="密码">
+                    <div class="input-addon tac">
+                        <div class="gicon gicon-lock"></div>
+                    </div>
+                </div>
+                <div class="input-box msg-box">
+                    <span class="error-msg" v-model="msg.errormsg">{{msg.errormsg}}</span>
+                    <a class="lnk-forget" href="forgetpwd.html" target="_blank">忘记密码？</a>
+                </div>
+                <div class="input-box">
+                    <button class="btn btn-signin btn-primary btn-block" type="button" @click="login()">登 录</button>
+                </div>
+				<!--
+                <div class="input-box third-party tac">
+					<a class="lnk-qq" href="https://userapi.mlyx.com/user/login/go2qq?sUrl=http%3A%2F%2Fwww.mlyx.com%2F">
+						<div class="icon icon-qq"></div>
+					</a>
+					<a class="lnk-weixin" href="https://userapi.mlyx.com/user/login/go2weixin?sUrl=http%3A%2F%2Fwww.mlyx.com%2F">
+						<div class="icon icon-weixin"></div>
+					</a>
+				</div>-->
+            </div>
+            <div class="signup-box tac">还没有帐号？<a class="lnk-signup" href="register.html">立即注册</a></div>
+        </div>
+    </div>
+</div>
+<footer class="g-footer cf">
+    <div class="container"><a class="f-logo fl" href="index.html" target="_blank">
+		<img src="static/img/chuxin_logo.png"></a>
+        <div class="copyright fl">
+            <p>Copyright  2013 - 2019 成都初心互动科技有限公司. All Rights Reserved</p>
+            <p class="icp nbm">
+                <a href="images/moling_logo.png" target="_blank">icp: 川B2-20170306</a>&nbsp;&nbsp;
+                <a href="javascript:window.location='http://www.miitbeian.gov.cn/'" target="_blank">文网文:川网文(2017)5974-241号</a>&nbsp;&nbsp;
+                <a href="index.htm" target="_blank">川网文[2016]6088-1458</a>
+            </p>
+        </div>
+    </div>
+</footer>
+<script>
+    new Vue({
+        el: '#vue-box',
+        data: {
+            msg: {
+                username: '',
+                pass: '',
+                errormsg: ''
+            }
+        },
+        methods: {
+            login: function () {
+                var msg = this.msg;
+
+                if(msg.username == ''){
+                    msg.errormsg = "用户名不能为空";
+                }else if(msg.pass == ''){
+                    msg.errormsg = "密码不能为空";
+                }
+
+                if(msg.username  && msg.pass){
+                    msg.errormsg = "";
+                    common.ajax('post', common.ip + '/login/login.php', this.msg, function (data) {
+                        var json = JSON.parse(data);
+                        if (json.code == 0){
+                            console.log("登录成功");
+                        }else{
+                            msg.errormsg = "登录失败";
+                        }
+                    })
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>
