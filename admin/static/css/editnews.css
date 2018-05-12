@@ -1,0 +1,39 @@
+/*返回*/
+.back{
+    display: inline-block;
+    padding: 3px 15px;
+    margin-left: 30px;
+    background-color: #337ab7;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*表单*/
+.editNewsFormWrapper{
+    background-color: #fff;
+    padding: 2% 5%;
+}
+.note-editable{
+    min-height: 500px;
+}
+.editorBtn{
+    margin-top: 10px;
+}
+.editorBtn span{
+    display: inline-block;
+    background-color: #ccc;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #84a4ff;
+}
+/*.editorBtn .public{
+    background-color: #ff8c87;
+}
+.editorBtn .save{
+    background-color: #d0bfff;
+}*/
+.editorBtn span:hover{
+    background-color: #ff8c87;
+}

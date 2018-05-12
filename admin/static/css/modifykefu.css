@@ -1,0 +1,40 @@
+/*返回*/
+.back{
+    display: inline-block;
+    padding: 3px 15px;
+    margin-left: 30px;
+    background-color: #337ab7;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*表单*/
+.modifyKefuFormWrapper{
+    background-color: #fff;
+    padding: 5% 10%;
+}
+.modifyKefuForm{
+    padding: 1px;
+}
+#page-inner .modifyKefuForm label{
+    width: 150px;
+    text-align: right;
+}
+.modifyKefuForm input{
+    border: 1px solid #ccc;
+    width: 300px;
+    padding: 4px;
+    border-radius: 4px;
+}
+.modifyKefuForm .modifyKefuInput{
+    margin-bottom: 20px;
+}
+.modifyKefuSubmit span{
+    display: inline-block;
+    padding: 5px 36px;
+    margin-left: 150px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #01D19C;
+    color: #fff;
+}

@@ -1,0 +1,64 @@
+/*返回*/
+.back{
+    display: inline-block;
+    padding: 3px 15px;
+    margin-left: 30px;
+    background-color: #337ab7;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*表单*/
+.addGameFormWrapper{
+    background-color: #fff;
+    padding: 5% 10%;
+}
+.addGameForm{
+    height: 523px;
+    padding: 1px;
+}
+#page-inner .addGameForm label{
+    width: 150px;
+    text-align: right;
+}
+.addGameForm input{
+    border: 1px solid #ccc;
+    width: 300px;
+    padding: 4px;
+    border-radius: 4px;
+}
+.addGameForm .addGameInput{
+    margin-bottom: 20px;
+}
+.addGameForm .addGameInputIcon .showFileimg{
+    display: inline-block;
+    padding: 23px 56px;
+    width: 212px;
+    height: 146px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+.addGameInputIcon .showFileimg img{
+    display: none;
+    width: 100px;
+}
+.addGameInputIcon .addGamepushIcon{
+    display: inline-block;
+    height: 146px;
+    float: left;
+}
+.addGameForm .addGameInputIcon input{
+    border: none;
+    display: inline;
+    width: 83px;
+}
+.addGameSubmit span{
+    display: inline-block;
+    padding: 5px 36px;
+    margin-left: 150px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #01D19C;
+    color: #fff;
+}

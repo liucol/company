@@ -1,0 +1,40 @@
+/*返回*/
+.back{
+    display: inline-block;
+    padding: 3px 15px;
+    margin-left: 30px;
+    background-color: #337ab7;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*表单*/
+.modifyNewsFormWrapper{
+    background-color: #fff;
+    padding: 5% 10%;
+}
+.modifyNewsForm{
+    padding: 1px;
+}
+#page-inner .modifyNewsForm label{
+    width: 150px;
+    text-align: right;
+}
+.modifyNewsForm input{
+    border: 1px solid #ccc;
+    width: 300px;
+    padding: 4px;
+    border-radius: 4px;
+}
+.modifyNewsForm .modifyNewsInput{
+    margin-bottom: 20px;
+}
+.modifyNewsSubmit span{
+    display: inline-block;
+    padding: 5px 36px;
+    margin-left: 150px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #01D19C;
+    color: #fff;
+}

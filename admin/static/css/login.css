@@ -1,0 +1,92 @@
+*{
+    font-family: 'Montserrat-Regular', 'STYuanti-SC-Regular', 'hyppt';
+}
+.login-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.login-wrap .logo{
+    position: absolute;
+    color: #424242;
+    top: 11%;
+    left: 200px;
+    font-size: 25px;
+}
+.login-bg{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    height: 400px;
+    width: 100%;
+    background: url("../image/bg1.jpg") no-repeat;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+}
+.login-box{
+    position: absolute;
+    top: 50%;
+    right: 23%;
+    transform: translate(0,-50%);
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px #ccc ;  /*#e7c3c3*/
+    background-color: #F8F8F8;
+}
+.login-box h2{
+    text-align: center;
+    line-height: 90px;
+    color: #363636;
+    font-size: 23px;
+    font-weight: 500;
+}
+.input-wrap{
+    text-align: center;
+    margin-top: 25px;
+}
+.input-wrap input{
+    margin-bottom: 20px;
+    width: 300px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    padding: 9px 5px;
+    border-radius: 4px;
+}
+.input-wrap input:hover{
+    border-bottom: 1px solid #A1AAB9;
+}
+.input-wrap input:focus,input:focus{
+    box-shadow: 0 0 4px #9087AA;
+    border-bottom: none;
+}
+.input-wrap .password{
+    margin-bottom: 10px;
+}
+.input-wrap  .error{
+    display: inline-block;
+    height: 16px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: red;
+}
+.input-wrap .login-button{
+    display: inline-block;
+    width: 300px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 9px 99px;
+    background-color: #ccc;
+    color: #424242;
+    cursor: pointer;
+}
+.input-wrap .login-button:hover{
+    background-color: #A1AAB9;
+    color: #fff;
+}

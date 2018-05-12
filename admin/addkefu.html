@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="" name="description" />
+    <meta content="webthemez" name="author" />
+    <title>官网后台</title>
+    <!-- Bootstrap Styles-->
+    <link href="commonstatic/css/bootstrap.css" rel="stylesheet" />
+    <link href="commonstatic/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="commonstatic/css/font-awesome.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="commonstatic/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href="static/css/addKefu.css" rel="stylesheet" />
+</head>
+<body>
+<div id="wrapper">
+    <!--top-->
+    <nav class="navbar navbar-default top-navbar" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"><strong>初心官网后台</strong></a>
+            <div id="sideNav" href="">
+                <i class="fa fa-bars icon"></i>
+            </div>
+        </div>
+
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                    admin <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <!--<li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                    </li>-->
+                    <!--<li class="divider"></li>  //空行-->
+                    <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-user -->
+            </li>
+            <!-- /.dropdown -->
+        </ul>
+    </nav>
+
+    <!--侧边导航栏-->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+
+                <li> <!--fa-desktop fa-dashboard fa-qrcode fa-table fa-edit fa-sitemap fa-fw fa-file-->
+                    <a href="index.html"><i class="fa fa-dashboard"></i>首页</a>
+                </li>
+
+                <li>
+                    <a href="gameslist.html"><i class="fa fa-gamepad"></i> 游戏列表</a>
+                </li>
+
+                <li>
+                    <a href="openservicelist.html"><i class="fa fa-table"></i> 开服列表</a>
+                </li>
+
+                <li>
+                    <a href="giftlist.html"><i class="fa fa-gift"></i> 礼包列表</a>
+                </li>
+
+                <li>
+                    <a href="newslist.html"><i class="fa fa-file-o"></i> 新闻列表</a>
+                </li>
+
+                <li>
+                    <a href="kefu.html" class="active-menu"><i class="fa fa-phone"></i> 客服列表</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <!--主体内容-->
+    <div id="page-wrapper">
+        <div class="header">
+            <h1 class="page-header">
+                新增客服
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="kefu.html">客服列表</a></li>
+                <li class="active">
+                    新增客服
+                    <span class="back">返回</span>
+                </li>
+            </ol>
+        </div>
+        <div id="page-inner">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-12 addKefuFormWrapper">
+                        <div class="addKefuForm">
+                            <div class="addKefuInput">
+                                <label>ID：</label>
+                                <input/>
+                            </div>
+                            <div class="addKefuInput">
+                                <label>名称：</label>
+                                <input/>
+                            </div>
+                            <div class="addKefuInput">
+                                <label>QQ号：</label>
+                                <input/>
+                            </div>
+                        </div>
+                        <div class="addKefuSubmit"><span id="SubmitButton">提交</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /. WRAPPER  -->
+<!-- JS Scripts-->
+<!-- jQuery Js -->
+<script src="commonstatic/js/jquery-1.10.2.js"></script>
+<!-- Bootstrap Js -->
+<script src="commonstatic/js/bootstrap.min.js"></script>
+<script src="commonstatic/js/bootstrap-datetimepicker.min.js"></script>
+<script src="commonstatic/js/bootstrap-datetimepicker.zh-CN.js"></script>
+
+<!-- Metis Menu Js -->
+<script src="commonstatic/js/jquery.metisMenu.js"></script>
+<!-- Custom Js -->
+<script src="commonstatic/js/custom-scripts.js"></script>
+
+<script src="static/js/addkefu.js"></script>
+
+</body>
+</html>
