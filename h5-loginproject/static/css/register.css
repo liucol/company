@@ -1,0 +1,96 @@
+input{
+    outline:none;
+    border: none;
+}
+.layout{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+}
+@media screen and (max-width: 300px) {
+    .layout{
+        width: 210px;
+    }
+}
+.register-inputwrap{
+    position: relative;
+    margin-bottom: 10px;
+    padding: 8px 0 8px 8px;
+    height: 26px;
+    background: #FFFFFF;
+}
+.register-inputwrap input{
+    float:left;
+    padding-left: 5px;
+    height: 27px;
+    width: 70%;
+}
+.register-title{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.username-icon{
+    float: left;
+    display: inline-block;
+    background: url("../img/ly_phone_icon.png") no-repeat;
+    width: 2rem;
+    height: 2rem;
+    background-size: 2rem;
+}
+.password-icon{
+    float: left;
+    display: inline-block;
+    margin-right: 1%;
+    background: url("../img/ly_pwd_icon.png") no-repeat;
+    width: 2rem;
+    height: 2rem;
+    background-size: 2rem;
+}
+.delete{
+    float:right;
+    display: inline-block;
+    background: url("../img/ly_delete_icon.png") no-repeat;
+    width: 2rem;
+    height: 2rem;
+    background-size: 2rem;
+}
+#register-button{
+    margin-bottom: 10px;
+    width: 100%;
+}
+#register-button input{
+    width: 100%;
+    padding: 13px 0;
+    background: #19C5AE;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+.registerbox-protocol{
+    text-align: center;
+}
+.registerbox-protocol .protocol{
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/ly_agreement_checkbox_unchencked.png");
+    background-size: 20px 20px;
+}
+/*.registerbox-protocol .default{
+    background: url("../img/ly_agreement_checkbox_unchencked.png");
+    background-size: 20px 20px;
+}*/
+.registerbox-protocol .checked{
+    z-index: 10;
+    background: url("../img/ly_agreement_checkbox_chencked.png");
+    background-size: 20px 20px;
+}
+.registerbox-protocol .prl-text{
+    font-size: 13px;
+}
+#errorinfo{
+    color: #D1675A;
+}

@@ -1,0 +1,34 @@
+.user-info{
+    position: relative;
+    background: #FFFFFF;
+    min-height: 400px;
+}
+.user-info .info{
+    padding: 10px;
+    width: 75%;
+    border-radius: 5px;
+    position: absolute;
+    background: #F2F2F2;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+}
+.user-info .info p{
+    line-height: 60px;
+    font-size: 20px;
+}
+.logoff{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+.logoff p{
+    text-align: center;
+    padding: 10px 0;
+    background: #F2F2F2;
+    color: #26B1F5;
+}

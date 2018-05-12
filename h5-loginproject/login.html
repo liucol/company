@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8"utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>欢迎登录初心互动手游网_个人游戏中心_初心互动手游</title>
+    <meta name="keywords" content="登录页面,手游登录页面,个人游戏中心,9377手游" />
+    <meta name="description" content="9377手游登录页面，动动手指登录，就能畅游所有手机游戏的世界。找好玩的手游，就上9377手游网！" />
+    <meta name="format-detection" content="telephone=no" />
+    <link type="text/css" rel="stylesheet" href="static/css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="static/css/style.css"  />
+    <link type="text/css" rel="stylesheet" href="static/css/login.css"  />
+    <style> html,body { height: 100%;} </style>
+</head>
+<body>
+
+<div class="header-topBar">
+    <a href="javascript:if(confirm(''))window.location='http://m.9377.cn/'"  class="logo">
+        <img src="static/img/logo.png-20180316184214.png"  alt="9377手游平台" />
+    </a>
+    <div class="spring_chicken"></div>
+    <div class="spring_dog"></div>
+    <div class="top_right">
+        <a href="javascript:;" class="top_nav_ico app-center none" id="app-center"></a>
+        <a href="login.php-ac=login&type=wap.htm"  class="top_nav_ico app-center " id="no-login"></a>
+
+        <div class="top-nav" id="top-nav">
+            <div id="logined">
+                <a href="javascript:if(confirm(''))window.location='http://m.9377.cn/user.php'" ><em class="l1"></em><span class="username"></span></a>
+                <a href="javascript:if(confirm(''))window.location='http://m.9377.cn/user.php?ac=game_card'" ><em class="l2"></em>我的礼包</a>
+                <a href="javascript:if(confirm(''))window.location='http://m.9377.cn/user.php'" ><em class="l3"></em>我的设置</a>
+                <a href="login.php-do=logout&type=wap.htm" ><em class="l4"></em>退出登录</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!--登录框-->
+<div class="register-wp">
+    <!--<div class="register-box">-->
+       <!-- <div class="r-tit">登 录</div>
+        <form class="form-register" id="form-login" method="post" action="https://wvw.9377.cn/login.php?type=wap">
+            <div class="w-item">
+                <label class="w-label icon-reg1"></label>
+                <input type="text" pattern="\w{4,20}" name="username" required class="w-input" placeholder="请输入您的帐号">
+            </div>
+            <div class="w-item">
+                <label class="w-label icon-reg2"></label>
+                <input type="password" class="w-input" name="password" required pattern="\w{6,}" placeholder="请输入您的密码">
+            </div>
+            <div class="w-item ag-txt ag-txt2">
+                <span class="fl item-select"><em class="ag-wp"><i class="icon-reg4 selected"></i><input name="login_save" type="checkbox" value="1" id="login_save"></em> 自动登录</span>
+                <a href="javascript:if(confirm('https://wvw.9377.cn/new_getpass/getpass.php?dis=wap  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://wvw.9377.cn/new_getpass/getpass.php?dis=wap'"  class="fr">忘记密码</a>
+            </div>
+            <div class="reg-tip reg-tip-al" id="reg-tip"></div>
+            <input type="hidden" name="gourl" value="https://www.9377.cn">
+            <input type="hidden" name="do" value="login">
+            <button type="submit" class="btn-register">登 录</button>
+            <div class="other-login">
+                <div class="line"></div>
+                <a href="javascript:;" class="ol-item" onclick="window.location.href = 'https://wvw.9377.cn/api/qq.php?_qq_action=login&_9377_forward='+ encodeURIComponent($('#form-login input[name=gourl]').val()); return false;"><i class="i-qq"></i></a><a href="javascript:;" class="ol-item" onclick="window.location.href = 'http://s.9377.com/api/wx_login.php?_wx_action=login&_s9377=1&_9377_forward='+ encodeURIComponent($('#form-login input[name=gourl]').val()); return false;"><i class="i-wx"></i></a><a href="javascript:;" class="ol-item" onclick="window.location.href = 'http://s.9377.com/api/weibo.php?_wb_action=login&_s9377=1&_9377_forward='+ encodeURIComponent($('#form-login input[name=gourl]').val()); return false;"><i class="i-wb"></i></a>
+            </div>
+            <div class="has-account"> 没有9377账号，<a href="javascript:if(confirm('https://wvw.9377.cn/register.php?type=wap  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://wvw.9377.cn/register.php?type=wap'"  class="btn-tologin">可前往注册>></a> </div>
+        </form>-->
+    <!--</div>-->
+
+    <div id="login" class="layout">
+        <div id="username" class="login-inputwrap">
+            <span class="username-icon"></span>
+                <input id="usernameinput" type="text" placeholder="请输入用户名/邮箱"/>
+            <span class="delete"></span>
+        </div>
+        <div id="password" class="login-inputwrap">
+            <span class="password-icon"></span>
+            <input id="passowrdinput" type="password" placeholder="密码长度6到20位"/>
+            <span class="delete"></span>
+        </div>
+        <p id="errorinfo"></p>
+        <div id="login-button">
+            <input id="loginbutton" type="button" value="登录"/>
+        </div>
+        <span id="forget-password"><a href="javascript:;">忘记密码</a></span>
+    </div>
+</div>
+
+<div class="url clearfix" id="bottom_nav">
+    <a href="javascript:if(confirm(''))window.location='https://m.9377.cn/'" ><em class="sy"></em>首页</a>
+    <a href="javascript:if(confirm(''))window.location='https://m.9377.cn/game_center.php'" ><em class="yx"></em>游戏</a>
+    <a href="javascript:if(confirm(''))window.location='https://m.9377.cn/game_card.php'" ><em class="lb"></em>礼包</a>
+    <a href="javascript:if(confirm(''))window.location='https://m.9377.cn/kefu/'" ><em class="kf"></em>客服</a>
+</div>
+
+<script type="text/javascript" src="static/js/common/jquery-3.2.0.min.js" ></script>
+<script type="text/javascript" src="static/js/common/zepto.min.js" ></script>
+<script type="text/javascript" src="static/js/common/main_wap.js" ></script>
+<script type="text/javascript" src="static/js/login.js" ></script>
+<script>
+    $(function(){
+        $('.item-select').click(function(){
+            $(this).find('i').toggleClass('selected');
+            var ipt = $(this).find('input');
+            if(ipt.attr('checked')){
+                ipt.removeAttr('checked');
+            }else{
+                ipt.attr('checked','checked');
+            }
+        });
+    })    
+</script>
+<div class="__data__" data_id="" page="" postfix="" style="display: none; "><div></div><span>备用调用</span></div>
+
+</body>
+</html>
