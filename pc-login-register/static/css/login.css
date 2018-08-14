@@ -1,0 +1,136 @@
+body{
+    background: #f1f1f1;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.top{
+    width: 100%;
+    background-color: #FBFBFB;
+}
+.header{
+    width: 1000px;
+    margin: 0 auto;
+    height: 94px;
+}
+.header-left img{
+    float: left;
+    height: 94px;
+}
+.header-right{
+    float: right;
+    margin-top: 30px;
+}
+.header-right span{
+    display: inline-block;
+    padding: 0 20px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.header-right .log{
+    color: #fff;
+    background-color: #3499DA;
+}
+.header-right .reg{
+    color:  #3499DA;
+    border: 1px solid #3499DA;
+}
+
+.log-content{
+    min-height: 330px;
+    height: auto;
+    position: relative;
+    background: #FFF url(../img/log-content-bg.png) repeat-x 0 100%;
+    margin-top: 40px;
+}
+.log-content_nav{
+    width: 670px;
+    margin: 0 auto;
+    font-family: "微软雅黑";
+}
+.log-left{
+    float: left;
+    padding-top: 35px;
+    padding-bottom: 80px;
+    width: 400px;
+}
+.log-title{
+    height: 40px;
+    color: #34495e;
+}
+.log-title h2{
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+}
+.login-input{
+    display: block;
+    height: 40px;
+    width: 100%;
+    border-bottom: #e9ecee 1px solid;
+    margin-top: 30px;
+}
+.login-input input{
+    padding: 10px 2.5%;
+    padding-left: 30px;
+    border: none;
+    width: 350px;
+    font-family: "微软雅黑";
+    height: 19px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.userinput input{
+    background: url(../img/b_1.png) no-repeat left center;
+}
+.passwordinput input{
+    background: url(../img/b_2.png) no-repeat left center;
+}
+.login-input input::input-placeholder{color:#b8c4ce!important;}
+.login-input input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #b8c4ce!important;
+}
+.login-input input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #b8c4ce!important;
+}
+.login-input input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #b8c4ce!important;
+}
+.login-input input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #b8c4ce!important;
+}
+.error-msg{
+    margin: 0;
+    margin-top: 5px;
+    color: #FF424F;
+}
+.lang-btn{
+    display: inline-block;
+    position: relative;
+    margin-top: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+    white-space: nowrap;
+    background: #3499DA;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    font-size: 16px;
+    color: #FFF;
+    border: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 2px;
+}
+.foot{
+    margin-top: 100px;
+}
+.foot p{
+    text-align: center;
+}

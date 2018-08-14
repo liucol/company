@@ -17,6 +17,9 @@ $addGameSubmit.on("click",function(){
 })
 $("#picture").change(function(){
      var current_pic = this.files[0];
+
+     console.log("得到的this")
+     console.log(this)
      preview_picture(current_pic);
 })
 function preview_picture(pic){

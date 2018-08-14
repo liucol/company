@@ -1,0 +1,663 @@
+.icon {
+    display: inline-block;
+    margin-right: 5px;
+    background-image: url("../img/icons.png")/*tpa=http://fy.molinggame.com/images/icons.png*/;
+    background-repeat: no-repeat;
+    vertical-align: middle
+}
+
+.bind {
+    background-position: -193px -290px;
+    width: 90px;
+    height: 19px
+}
+
+.icon-bag {
+    background-position: -66px -326px;
+    width: 16px;
+    height: 16px
+}
+
+.icon-bag:hover, .icon-card {
+    background-position: -315px -290px;
+    width: 16px;
+    height: 16px
+}
+
+.icon-card {
+    background-position: -270px -258px;
+    width: 17px
+}
+
+.icon-check-circle {
+    background-position: -194px -326px;
+    width: 15px;
+    height: 15px
+}
+
+.icon-chevron-circle-right {
+    background-position: -345px -73px;
+    width: 21px;
+    height: 21px
+}
+
+.icon-clock, .icon-clock:hover {
+    background-position: -130px -326px;
+    width: 16px;
+    height: 16px
+}
+
+.icon-clock:hover {
+    background-position: -82px -326px
+}
+
+.icon-dollar {
+    background-position: -345px -122px;
+    width: 18px;
+    height: 18px
+}
+
+.icon-dollar-circle {
+    background-position: -345px -188px;
+    width: 17px;
+    height: 17px
+}
+
+.icon-dollar-circle:hover {
+    background-position: -260px -211px;
+    width: 17px;
+    height: 17px
+}
+
+.icon-drop {
+    background-position: -145px 0;
+    width: 145px;
+    height: 145px
+}
+
+.icon-email {
+    background-position: -290px -278px;
+    width: 16px;
+    height: 12px
+}
+
+.icon-error {
+    background-position: -243px -211px;
+    width: 17px;
+    height: 17px
+}
+
+.icon-excla-circle-yellow {
+    background-position: -331px -290px;
+    width: 16px;
+    height: 16px
+}
+
+.icon-exclamation-circle {
+    background-position: -209px -326px;
+    width: 15px;
+    height: 15px
+}
+
+.icon-game, .icon-game:hover {
+    background-position: -345px -140px;
+    width: 20px;
+    height: 13px
+}
+
+.icon-game:hover {
+    background-position: -243px -228px
+}
+
+.icon-gold {
+    background-position: -290px -154px;
+    width: 55px;
+    height: 55px
+}
+
+.icon-gold2 {
+    background-position: -345px -99px;
+    width: 19px;
+    height: 23px
+}
+
+.icon-graph {
+    background-position: -290px -99px;
+    width: 55px;
+    height: 55px
+}
+
+.icon-hourglass, .icon-hourglass:hover {
+    background-position: -276px -145px;
+    width: 14px;
+    height: 18px
+}
+
+.icon-hourglass:hover {
+    background-position: -276px -178px
+}
+
+.icon-identity-card {
+    background-position: -327px -209px;
+    width: 37px;
+    height: 34px
+}
+
+.icon-info {
+    background-position: -290px -44px;
+    width: 55px;
+    height: 55px
+}
+
+.icon-info-circle {
+    background-position: -276px -163px;
+    width: 13px;
+    height: 13px
+}
+
+.icon-key, .icon-key:hover {
+    background-position: -354px -278px;
+    width: 16px;
+    height: 8px
+}
+
+.icon-key:hover {
+    background-position: -338px -278px
+}
+
+.icon-lock, .icon-lock:hover {
+    background-position: -347px -290px;
+    width: 16px;
+    height: 16px
+}
+
+.icon-lock:hover {
+    background-position: -162px -326px
+}
+
+.icon-love {
+    background-position: 0 -145px;
+    width: 145px;
+    height: 145px
+}
+
+.icon-minimize, .icon-minimize:hover {
+    background-position: -98px -326px;
+    width: 16px;
+    height: 16px
+}
+
+.icon-minimize:hover {
+    background-position: -114px -326px
+}
+
+.icon-moeny {
+    background-position: 0 0;
+    width: 145px;
+    height: 145px
+}
+
+.icon-phone {
+    background-position: -363px -122px;
+    width: 11px;
+    height: 16px
+}
+
+.icon-plus-square {
+    background-position: -283px -290px;
+    width: 16px;
+    height: 16px
+}
+
+.icon-plus-square:hover {
+    background-position: -299px -290px;
+    width: 16px;
+    height: 16px
+}
+
+.icon-qq, .icon-qq:hover {
+    background-position: -243px -145px;
+    width: 33px;
+    height: 33px
+}
+
+.icon-qq:hover {
+    background-position: -323px -245px
+}
+
+.icon-question {
+    background-position: -356px -262px;
+    width: 17px;
+    height: 16px
+}
+
+.icon-question-circle {
+    background-position: -270px -241px;
+    width: 17px;
+    height: 17px
+}
+
+.icon-safe {
+    background-position: -145px -145px;
+    width: 98px;
+    height: 96px
+}
+
+.icon-star, .icon-star-full {
+    background-position: -345px -154px;
+    width: 19px;
+    height: 17px
+}
+
+.icon-star-full {
+    background-position: -345px -171px
+}
+
+.icon-success {
+    background-position: -356px -245px;
+    width: 17px;
+    height: 17px
+}
+
+.icon-success2 {
+    background-position: -290px -209px;
+    width: 37px;
+    height: 36px
+}
+
+.icon-sucessce {
+    background-position: -345px -44px;
+    width: 29px;
+    height: 29px
+}
+
+.icon-unread {
+    background-position: -96px -290px;
+    width: 97px;
+    height: 22px
+}
+
+.icon-user, .icon-user:hover {
+    background-position: -178px -326px;
+    width: 16px;
+    height: 16px
+}
+
+.icon-user:hover {
+    background-position: -146px -326px
+}
+
+.icon-volume, .icon-volume:hover {
+    background-position: -306px -278px;
+    width: 16px;
+    height: 12px
+}
+
+.icon-volume:hover {
+    background-position: -322px -278px
+}
+
+.icon-weibo, .icon-weibo:hover {
+    background-position: -290px -245px;
+    width: 33px;
+    height: 33px
+}
+
+.icon-weibo:hover {
+    background-position: -243px -178px
+}
+
+.icon-weixin, .icon-weixin:hover {
+    background-position: 0 -326px;
+    width: 33px;
+    height: 33px
+}
+
+.icon-weixin:hover {
+    background-position: -33px -326px
+}
+
+.logo-mlyx {
+    background-position: -145px -241px;
+    width: 125px;
+    height: 37px
+}
+
+.logo-qq {
+    background-position: -290px 0;
+    width: 84px;
+    height: 44px
+}
+
+.logo-weixin {
+    background-position: 0 -290px;
+    width: 96px;
+    height: 36px
+}
+
+body {
+    background-color: #f3f3f3
+}
+
+.g-header {
+    height: 80px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd
+}
+
+.g-header .head-container {
+    padding: 0 50px
+}
+
+.g-header .brand {
+    margin-top: 16px
+}
+
+.g-header .title {
+    margin: 26px 0 0 25px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #5f5f5f;
+    line-height: 1em;
+    border-left: 1px solid #dddcdc;
+    padding-left: 22px
+}
+
+.g-header .header-login {
+    margin: 28px 0 0;
+    line-height: 25px;
+    color: #858585
+}
+
+.g-header .header-login .btn-login {
+    margin-left: 10px;
+    height: 25px;
+    width: 88px;
+    border: 1px solid #ceaf73;
+    display: inline-block;
+    border-radius: 3px;
+    color: #c6a255
+}
+
+.g-header .header-login .btn-icon {
+    height: 24px;
+    width: 26px;
+    border-right: 1px solid #ceaf73;
+    display: inline-block;
+    text-align: center;
+    margin-right: 16px
+}
+
+.g-header .header-login .icon-user {
+    margin: -3px 0 0
+}
+
+.g-wrap {
+    padding-bottom: 178px;
+    height: auto;
+    min-height: 100%
+}
+
+.g-footer {
+    margin-top: -178px
+}
+
+.signup-wrap {
+    margin-bottom: 104px
+}
+
+.signup-wrap .container {
+    width: 925px
+}
+
+.signup-wrap .headline {
+    padding: 45px 0 35px;
+    text-align: center;
+    color: #989898;
+    font-size: 14px
+}
+
+.signup-wrap .headline .head-title {
+    font-size: 24px;
+    color: #c6a255;
+    padding-bottom: 20px
+}
+
+.signup-wrap .headline .icon-identity-card {
+    margin-right: 15px
+}
+
+.signup-wrap .signup-box {
+    border: 1px solid #dcdcdc;
+    background: #fff
+}
+
+.signup-wrap .signup-box .head-tab {
+    border-bottom: 1px solid #dcdcdc;
+    height: 68px;
+    line-height: 66px
+}
+
+.signup-wrap .signup-box .head-tab ul {
+    position: relative;
+    width: 525px;
+    margin: auto;
+    bottom: -1px
+}
+
+.signup-wrap .signup-box .head-tab li {
+    float: left;
+    width: 175px;
+    margin-bottom: -1;
+    text-align: center
+}
+
+.signup-wrap .signup-box .head-tab .active, .signup-wrap .signup-box .head-tab li:hover {
+    color: #c6a255;
+    border-bottom: 1px solid #c6a255
+}
+
+.signup-wrap .signup-form {
+    padding: 75px 0 0 232px;
+    height: 700px
+}
+
+.signup-wrap .signup-form .input-box {
+    padding-bottom: 5px;
+    line-height: 30px
+}
+
+.signup-wrap .signup-form .input-chk {
+    padding-left: 96px
+}
+
+.signup-wrap .signup-form .lbl, .signup-wrap .signup-form .lbl-chk {
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+    margin-right: 25px
+}
+
+.signup-wrap .signup-form .input {
+    margin-right: 5px;
+    width: 295px;
+    height: 32px;
+    padding: 5px 12px;
+    border: 1px solid #9d9d9d
+}
+
+.signup-wrap .signup-form .input.checkcode {
+    width: 162px;
+    margin-right: 32px
+}
+
+.signup-wrap .signup-form .input::-webkit-input-placeholder {
+    color: #d7d7d7
+}
+
+.signup-wrap .signup-form .input:-moz-placeholder, .signup-wrap .signup-form .input::-moz-placeholder {
+    color: #d7d7d7
+}
+
+.signup-wrap .signup-form .btn-signup {
+    margin-top: 5px;
+    width: 295px;
+    height: 44px
+}
+
+.signup-wrap .signup-form .muted {
+    display: block;
+    color: #a8a8a8;
+    height: 30px
+}
+
+.signup-wrap .signup-form .imgcode {
+    vertical-align: top;
+    height: 32px
+}
+
+.signup-wrap .signup-form .input-tips {
+    color: #a8a8a8;
+    font-size: 14px;
+    height: 50px
+}
+
+.signup-wrap .signup-form .input-tips a {
+    color: #c6a255
+}
+
+.signup-wrap .signup-form .input-tips a:hover {
+    color: #ae893a
+}
+
+.signup-wrap .signup-form .chk {
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+    vertical-align: text-bottom
+}
+
+.signup-wrap .signup-form .phonecode {
+    width: 162px
+}
+
+.signup-wrap .signup-form .btn-phonecode {
+    margin-left: 5px;
+    padding: 0;
+    height: 32px;
+    width: 123px;
+    color: #c6a255;
+    border: 1px solid #c6a255;
+    background: #f7f2e8;
+    text-align: center;
+    vertical-align: bottom
+}
+
+.signup-wrap .signup-form .input-error .input {
+    border: 1px solid red
+}
+
+.signup-wrap .signup-form .error-msg, .signup-wrap .signup-form .input-error .muted {
+    color: red
+}
+
+.signup-wrap .registered-box {
+    margin: 0 auto;
+    padding-top: 130px;
+    width: 685px;
+    height: 700px;
+    text-align: center
+}
+
+.signup-wrap .registered-box .registered-title {
+    font-size: 25px;
+    color: #5f5f5f
+}
+
+.signup-wrap .registered-box .registered-level {
+    border-bottom: 1px solid #ececec;
+    padding: 40px 0 22px
+}
+
+.signup-wrap .registered-box .icon {
+    margin-right: 10px;
+    vertical-align: text-bottom
+}
+
+.signup-wrap .registered-box .icon.ml-icon {
+    margin-left: 20px
+}
+
+.signup-wrap .registered-box .icon.mr-icon {
+    margin-right: 30px
+}
+
+.signup-wrap .registered-box .icon.icon-sucessce {
+    vertical-align: middle
+}
+
+.signup-wrap .registered-box .btn-ucenter {
+    margin-top: 70px;
+    padding: 0;
+    font-size: 16px;
+    color: #fff;
+    width: 240px;
+    height: 44px;
+    line-height: 42px;
+    border-radius: 22px;
+    background: #c6a255
+}
+
+.agreement-wrap {
+    padding: 50px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    background: #fcfcfc;
+    color: gray
+}
+
+.agreement-wrap h2 {
+    color: #c6a255;
+    font-size: 24px;
+    font-weight: 400
+}
+
+.agreement-wrap h4 {
+    color: #454545;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.agreement-wrap .indent {
+    text-indent: 2em
+}
+
+.agreement-wrap .indent2 {
+    text-indent: 4em
+}
+.prompt-message{
+    padding: 100px 0;
+}
+.prompt-message p{
+    text-align: center;
+    font-size: 20px;
+    color: #5f5f5f;
+    line-height: 1px;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../img/iconfont/iconfont.eot');
+    src: url('../img/iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../img/iconfont/iconfont.woff') format('woff'),
+    url('../img/iconfont/iconfont.ttf') format('truetype'),
+    url('../img/iconfont/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    margin-right: 10px;
+    font-family:"iconfont" !important;
+    font-size:22px;font-style:normal;
+    color: #c6a255;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
